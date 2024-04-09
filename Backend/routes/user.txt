@@ -1,0 +1,89 @@
+ router.post(
+//   "/login",
+//   [
+//     body("email", "Enter a valid email").isEmail(),
+//     body("Password", "Password cannot be blank").exists({
+//       min: 5,
+//     }),
+//   ],
+//   async (req, res) => {
+//     const errors = validationResult(req);
+//     if (!errors.isEmpty()) {
+//       return res.status(400).json({ errors: errors.array() });
+//     }
+//     const { email, password } = req.body;
+//     try {
+//       let user = User.findOne({ email });
+//       if (!user) {
+//         return res
+//           .status(400)
+//           .json({ error: "please try to login with correct credentials" });
+//         const passwordCompare = bcrypt.compare(password, user.password);
+
+//         if (!passwordCompare) {
+//           return res
+//             .status(400)
+//             .josn({ error: "please try to login with correct credentials" });
+//         }
+//         const data = {
+//           user: {
+//             id: user.id,
+//           },
+//         };
+//       }
+//       const jwtdata = jwt.sign(data, JWT_SECRET);
+//     } catch (error) {}
+//   }
+// );
+
+
+
+
+
+
+
+
+
+
+
+ router.post(
+//   "/login",
+//   [
+//     body("email", "Enter a valid email").isEmail(),
+//     body("password", "Password cannot be blank").exists({
+//       min: 5,
+//     }),
+//   ],
+//   async (req, res) => {
+//     const errors = validationResult(req);
+//     if (!errors.isEmpty()) {
+//       return res.status(400).json({ errors: errors.array() });
+//     }
+
+//     const { email, password } = req.body;
+//     try {
+//       const user = await User.findOne({ email });
+//       if (!user) {
+//         return res.status(400).json({ error: "Invalid credentials" });
+//       }
+
+//       const passwordCompare = await bcrypt.compare(password, user.password);
+//       if (!passwordCompare) {
+//         return res.status(400).json({ error: "Invalid credentials" });
+//       }
+
+//       const data = {
+//         user: {
+//           id: user.id,
+//         },
+//       };
+
+//       const jwtToken = jwt.sign(data, JWT_SECRET);
+//       return res.status(200).json({ token: jwtToken });
+//     } catch (error) {
+//       console.error(error);
+//       return res.status(500).json({ error: "Internal Server Error" });
+//     }
+//   }
+// );
+
