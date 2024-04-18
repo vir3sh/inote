@@ -49,17 +49,6 @@ const Navbar = () => {
                   About
                 </Link>
               </li>
-
-              <li className="nav-item">
-                <Link
-                  className={`nav-link ${
-                    location.pathname === "/Notes" ? "active" : ""
-                  }`}
-                  to="/Notes"
-                >
-                  Notes
-                </Link>
-              </li>
             </ul>
             <form className="d-flex" role="search">
               <input
